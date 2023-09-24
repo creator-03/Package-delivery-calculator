@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Package Delivery Calculator</title>
+    <link rel="icon" href="icons8-delivery-48.png" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div class="bg-image"></div>
+    <marquee loop="infinite" class="text-move"
+      >Delivery only available on Weekdays! Saturday and Sunday are Holidays
+    </marquee>
+    <div class="logo-header">
+      <img
+        src="Online_Shoping_29.jpg"
+        class="logo"
+        alt="delivery-man"
+        title="Best Delivery"
+      />
+      <span>Speed Delivery</span>
+    </div>
+    <blockquote class="description">
+      Safe and <br />
+      on-time <br />package services
+    </blockquote>
+
+    <div class="container">
+      <div class="route-list">
+        <label for="start"> From:</label>
+        <select id="start">
+          <option value="">--Select--</option>
+          <option value="Tirunelveli">Tirunelveli</option>
+          <option value="Madurai">Madurai</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Coimbatore">Coimbatore</option>
+          <option value="Salem">Salem</option>
+          <option value="Bangalore">Bangalore</option>
+          <option value="Trichy">Trichy</option>
+        </select>
+
+        <br />
+
+        <label for="end"> To:</label>
+        <select id="end">
+          <option value="">--Select--</option>
+          <option value="Madurai">Madurai</option>
+          <option value="Tirunelveli">Tirunelveli</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Coimbatore">Coimbatore</option>
+          <option value="Salem">Salem</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Bangalore">Bangalore</option>
+          <option value="Trichy">Trichy</option>
+        </select>
+
+        <br />
+
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" />
+
+        <br />
+      </div>
+      <p class="package-select">Select Package Size:</p>
+      <div class="size-package">
+        <label
+          ><input type="checkbox" id="smallCheckbox" />
+          <img
+            src="icons8-cardboard-box-48.png"
+            alt="package1"
+            class="small"
+          />5Kg
+        </label>
+
+        <label>
+          <input type="checkbox" id="mediumCheckbox" /><img
+            src="icons8-cardboard-box-48.png"
+            alt="package1"
+            class="medium"
+          />
+          10Kg
+        </label>
+
+        <label>
+          <input type="checkbox" id="largeCheckbox" /><img
+            src="icons8-cardboard-box-48.png"
+            alt="package1"
+            class="large"
+          />
+          15Kg
+        </label>
+      </div>
+
+      <p class="size-select">Selected Size: <span id="selectedSize"></span></p>
+
+      <button id="calculate">Calculate</button>
+
+      <br />
+    </div>
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
